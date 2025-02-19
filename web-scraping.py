@@ -1,7 +1,11 @@
 import requests
 import pandas as pd
+from dotenv import load_dotenv
+import os
 
-coinmarketcap_api = "28837f41-1f64-4b04-8bc0-2ac2fc9ac559"
+load_dotenv()
+
+coinmarketcap_api = os.getenv("COINMARKETCAP_API")"28837f41-1f64-4b04-8bc0-2ac2fc9ac559"
 
 def get_latest_listings():
     url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
