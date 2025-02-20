@@ -5,7 +5,7 @@ import os
 
 load_dotenv()
 
-coinmarketcap_api = os.getenv("COINMARKETCAP_API")"28837f41-1f64-4b04-8bc0-2ac2fc9ac559"
+coinmarketcap_api = os.getenv("COINMARKETCAP_API")
 
 def get_latest_listings():
     url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
@@ -56,7 +56,7 @@ def trending_latest():
 
 
 def new_listings():
-    url = 
+    url = "fdfd"
     header = {
         "Accepts": "application/json",
         "X-CMC_PRO_API_KEY": coinmarketcap_api,
